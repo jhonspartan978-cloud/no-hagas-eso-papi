@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>No hagas eso, papi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080808;
+            color: white;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contenedor {
+            padding: 30px;
+            animation: aparecer 1.5s ease;
+        }
+
+        h1 {
+            color: #ff1717;
+            font-size: clamp(35px, 9vw, 65px);
+            text-shadow: 0 0 10px red,
+                         0 0 25px darkred;
+            margin-bottom: 25px;
+        }
+
+        .emoji {
+            font-size: 75px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #bbbbbb;
+            font-size: 20px;
+        }
+
+        .firma {
+            color: #ff3333;
+            margin-top: 35px;
+            font-size: 14px;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="emoji">💀🚫</div>
+
+        <h1>NO HAGAS ESO, PAPI</h1>
+
+        <p>Te estamos vigilando...</p>
+
+        <div class="firma">
+            SISTEMA DE CONCIENCIA ESCOLAR © 2026
+        </div>
+
+    </div>
+
+</body>
+</html>
